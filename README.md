@@ -3,4 +3,5 @@
 Lab1
 
 https://codepen.io/Pancharapon/pen/KKzQdxL
-<img width="1266" alt="ภาพหน้าจอ 2020-09-08 เวลา 8 54 01 AM" src="https://user-images.githubusercontent.com/44529800/92425939-d815c700-f1b2-11ea-91a2-72d2f49a6edd.png">
+<img width="1213" alt="ภาพหน้าจอ 2020-09-08 เวลา 9 13 14 AM" src="https://user-images.githubusercontent.com/44529800/92426233-9cc7c800-f1b3-11ea-9509-702a445c3135.png">
+
