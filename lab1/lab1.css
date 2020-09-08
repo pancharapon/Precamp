@@ -1,0 +1,272 @@
+
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.Tooltips {
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 16em;
+  font-weight: bold;
+  padding: 20px 1em;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 2px 2px 4px #AAAAAA;
+  background-color: #39CCCC;
+  color: black;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Tooltips .TooltipsText {
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Source Code Pro', monospace;
+  color: #fff;
+  width: 80%;
+  border-radius: 20px;
+  padding: 5px 20px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: calc(100% + 5px);
+  transform: translateX(-50%);
+}
+
+.Tooltips::after {
+  visibility: hidden;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+  left: 50%;
+  bottom: calc(100% - 5px);
+  transform: translateX(-50%);
+}
+
+.Tooltips:hover .TooltipsText,
+.Tooltips:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.Pagination {
+  display: inline-block;
+  margin: 20px 0;
+  box-shadow: 2px 2px 4px #AAAAAA;
+  border-radius: 5px;
+}
+
+.Pagination a {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: black;
+  border: 1px solid black;
+  float: left;
+  transition: all .2s ease-in-out;
+}
+
+.Pagination a:active,
+.Pagination a.active {
+  background-color: #39CCCC;
+}
+
+.Pagination a:hover {
+  transform: scale(1.2);
+}
+
+.Pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.Pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-bar {
+  width: 80%;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #39CCCC;
+  box-shadow: 2px 2px 4px #AAAAAA;
+
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul li {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  margin-right: 40px;
+}
+
+ul li:first-child {
+  margin-right: auto;
+}
+
+
+ul li:hover {
+  transform: scale(1.2);
+}
+
+ul li:first-child:hover {
+  color: #F012BE;
+}
+
+.fa-facebook-square:hover {
+  color: #0074D9;
+}
+
+.fa-envelope:hover {
+  color: #D9161C;
+}
+
+.fa-github-square:hover {
+  color: #FFDC00;
+}
+
+.main__dropdown {
+  display: inline-block;
+}
+
+.Hover, .Clicked {
+  display: inline-block;
+}
+
+h4 {
+  text-align: center;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+  margin: 0 40px;
+  z-index: 5;
+}
+
+.dropdown__hover1 {
+  display: inline-block;
+  padding: 10px;
+  background-color: #39CCCC;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 2px 2px 4px #AAAAAA;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.dropdown__hover1:hover {
+  background-color: #00ffff;
+}
+
+.dropdown__menu1 {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  background-color: white;
+  color: #323b40;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown1:hover .dropdown__menu1 {
+  display: inline-block;
+}
+
+.dropdown__menu1 a {
+  font-family: 'Source Code Pro', monospace;
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  border-top: solid 1px #e0e0e0;
+}
+
+.dropdown__menu1 a:hover {
+  background: #f0f0f0;
+  color: #323b40;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+  margin: 0 40px;
+  z-index: 5;
+}
+
+.dropdown__hover2 {
+  display: inline-block;
+  padding: 10px;
+  background-color: #39CCCC;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 2px 2px 4px #AAAAAA;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.dropdown__hover2:hover {
+  background-color: #00ffff;
+}
+
+.dropdown__menu2 {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  background-color: white;
+  color: #323b40;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown2:focus-within .dropdown__menu2 {
+  display: inline-block;
+}
+
+.dropdown__menu2 a {
+  font-family: 'Source Code Pro', monospace;
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  border-top: solid 1px #e0e0e0;
+}
+
+.dropdown__menu2 a:hover {
+  background: #f0f0f0;
+  color: #323b40;
+}
